@@ -12,7 +12,8 @@
     "@iconscout/react-unicons": "^1.1.6",
     "luxon": "^3.2.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-toastify": "^9.1.1"
   },
   "devDependencies": {
     "@types/react": "^18.0.26",
