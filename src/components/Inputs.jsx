@@ -42,21 +42,24 @@ function Inputs({ setQuery, units, setUnits }) {
             value={inputValue}
             type="text"
             placeholder="Enter a city...."
-            className="text-xl font-light p-2 w-full shadow-xl focus:outline-none"
+            className="text-base font-light py-2 px-5 w-full shadow-xl 
+            focus:outline-none  placeholder:text-white
+            text-white 
+            bg-gradient-to-l from-indigo-500 to-blue-500"
           />
         </form>
         <UilSearch
           onClick={handleClickOnSearch}
-          size={25}
+          size={20}
           className="cursor-pointer text-white transition ease-out hover:scale-125"
         />
         <UilLocationPoint
           onClick={handleClickOnLocation}
-          size={25}
+          size={20}
           className="cursor-pointer text-white transition ease-out hover:scale-125"
         />
       </div>
-      <div className="flex flex-row w-1/4 items-center justify-center">
+      <div className="flex flex-row w-1/4 items-center justify-center ">
         <button
           onClick={handleClickOnUnits}
           name="metric"

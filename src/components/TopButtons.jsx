@@ -35,8 +35,11 @@ export default function TopButtons({setQuery}) {
     );
   });
   return (
-    <div className="flex items-center justify-around my-6">
-      {renderedButtons}
-    </div>
+    <>
+      <div className="flex items-center justify-around my-6">
+        {renderedButtons}
+      </div>
+      <hr className="p-1 mb-10"/>
+    </>
   );
 }
