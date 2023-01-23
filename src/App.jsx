@@ -34,9 +34,9 @@ function App() {
     bg-gradient-to-r from-indigo-500 to-blue-500 h-fit shadow-xl
      shadow-gray-400
      rounded-3xl
-     max-lg:rounded-none max-lg:my-0 max-lg:p-10
+     max-lg:rounded-none max-lg:my-0 max-lg:p-10 max-lg:shadow-none
      max-sm:p-2
-     max-sm:h-screen
+     max-sm:min-h-screen
      "
     >
       <TopButtons setQuery={setQuery}/>
