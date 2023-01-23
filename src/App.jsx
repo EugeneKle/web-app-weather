@@ -30,12 +30,16 @@ function App() {
 
   return (
     <div
-      className="mx-auto max-w-screen-md mt-4 py-20 px-32 
+      className="mx-auto max-w-screen-md my-3 p-20
     bg-gradient-to-r from-indigo-500 to-blue-500 h-fit shadow-xl
      shadow-gray-400
-     rounded-3xl"
+     rounded-3xl
+     max-lg:rounded-none max-lg:my-0 max-lg:p-10
+     max-sm:p-2
+     max-sm:h-screen
+     "
     >
-      <TopButtons setQuery={setQuery} />
+      <TopButtons setQuery={setQuery}/>
       <Inputs setUnits={setUnits} setQuery={setQuery} units={units} />
 
       {weather && (

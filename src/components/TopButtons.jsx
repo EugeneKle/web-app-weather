@@ -27,7 +27,7 @@ export default function TopButtons({setQuery}) {
         onClick={() => {
           setQuery({ q: city.title });
         }}
-        className="text-white text-lg font-medium"
+        className="text-white text-lg font-medium max-sm:text-sm"
         key={city.id}
       >
         {city.title}
@@ -39,7 +39,7 @@ export default function TopButtons({setQuery}) {
       <div className="flex items-center justify-around my-6">
         {renderedButtons}
       </div>
-      <hr className="p-1 mb-10"/>
+      <hr className="p-1 mb-10" />
     </>
   );
 }

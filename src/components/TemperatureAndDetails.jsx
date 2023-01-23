@@ -27,16 +27,16 @@ function TemperatureAndDetails({
     <div>
       <div
         className="flex items-center justify-center py-6
-    text-xl text-white"
+    text-xl text-white max-sm:py-3 max-sm:text-lg"
       >
         <p>{details}</p>
       </div>
       <div
-        className="flex flex-row items-center justify-between
+        className="flex flex-row items-center justify-around
     text-white py-3"
       >
         <img className="w-20" src={iconUrlFromCode(icon)} alt="sun" />
-        <p className="text-5xl">{temp.toFixed()}°</p>
+        <p className="text-5xl max-sm:order-first">{temp.toFixed()}°</p>
         <div className="flex flex-col items-start space-y-2">
           <div className="flex font-light text-sm items-center justify-center">
             <UilTemperature size={18} className="mr-1" />
@@ -57,29 +57,29 @@ function TemperatureAndDetails({
       </div>
       <div
         className="flex flex-row items-center justify-center
-      space-x-2 text-white text-sm py-3"
+      space-x-2 text-white text-sm py-3 "
       >
         <UilSun />
-        <p className="font-light">
+        <p className="font-light ">
           Rise:
           <span className="font-medium ml-1">
             {formatToLocalTime(sunrise, timezone, "h:m a")}
           </span>
         </p>
-        <p className="font-light">|</p>
+        <p className="font-light max-sm:hidden">|</p>
         <UilSunset />
-        <p className="font-light">
+        <p className="font-light ">
           Set:
           <span className="font-medium ml-1">
             {formatToLocalTime(sunset, timezone, "h:m a")}
           </span>
         </p>
-        <p className="font-light">|</p>
+        <p className="font-light max-sm:hidden">|</p>
         <UilArrowUp />
         <p className="font-light">
           High: <span className="font-medium ml-1">{temp_max.toFixed()}°</span>
         </p>
-        <p className="font-light">|</p>
+        <p className="font-light max-sm:hidden">|</p>
         <UilArrowDown />
         <p className="font-light">
           Low: <span className="font-medium ml-1">{temp_min.toFixed()}°</span>
